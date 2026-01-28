@@ -14,11 +14,6 @@
   font-weight: 500;
 }
 
-body {
-  background-color: red !important;
-}
-
-
 #Menu li {
   cursor: pointer;
   transition: color 0.3s ease;
