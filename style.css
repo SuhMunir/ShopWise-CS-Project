@@ -1,8 +1,13 @@
-/*ShopWise frontend CSS*/
+/* =================================================
+   ShopWise – Main Stylesheet
+   E-commerce Theme
+   ================================================= */
 
-/* Reset small defaults */
+/* Basic reset */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Menu */
@@ -12,6 +17,7 @@
   list-style: none;
   font-size: 0.95rem;
   font-weight: 500;
+  color: #ffffff;
 }
 
 #Menu li {
@@ -20,7 +26,7 @@
 }
 
 #Menu li:hover {
-  color: #e0e7ff; /* soft indigo hover */
+  color: #e0e7ff;
 }
 
 /* Auth Buttons */
@@ -34,7 +40,7 @@
 
 /* Login Button */
 #Login {
-  background-color: red;
+  background-color: #ffffff;
   color: #2563eb;
 }
 
@@ -44,9 +50,9 @@
 
 /* Register Button */
 #Register {
-  border: 2px solid #ffffff;
+  background-color: transparent;
   color: #ffffff;
-  background: transparent;
+  border: 2px solid #ffffff;
 }
 
 #Register:hover {
@@ -54,27 +60,27 @@
   color: #2563eb;
 }
 
-/* Hero Buttons */
-.hero-btn-primary {
+/* Hero Section Buttons */
+.hero-primary {
   background-color: #ffffff;
   color: #2563eb;
 }
 
-.hero-btn-primary:hover {
+.hero-primary:hover {
   background-color: #f1f5f9;
 }
 
-.hero-btn-secondary {
+.hero-secondary {
   border: 2px solid #ffffff;
   color: #ffffff;
 }
 
-.hero-btn-secondary:hover {
+.hero-secondary:hover {
   background-color: #ffffff;
   color: #2563eb;
 }
 
-/* Footer Links */
+/* Footer */
 footer a {
   transition: color 0.3s ease;
 }
@@ -83,7 +89,7 @@ footer a:hover {
   color: #ffffff;
 }
 
-/* Small screens */
+/* Responsive (Mobile) */
 @media (max-width: 768px) {
   #Menu {
     display: none;
