@@ -7,7 +7,7 @@
 <!--HTML Head-->
 <head>
   <meta charset="UTF-8">
-
+  <!--favicon link-->
   <link rel="icon" type="image/png" href="favicon.ico">
   
   <!--titlebar-->
@@ -16,13 +16,31 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--CSS source-->
-  <script src="https://cdn.tailwindcss.com"> 
+  <!--CSS-->
+  <style>
+    #Menu {
+      font: "medium";
+        text: "black";
+    }
     
-  </script>
+    #Login {
+      color: "bg-white"; 
+      text: "blue";
+      font: "semibold";
+      hover: "bg-gray-100";
+    }
+
+    #Register {
+      color: "bg-white";
+      text: "blue";
+      font: "semibold";
+      hover: "bg-gray-100";
+    }
+  </style>
+  
 </head>
 <body>
-  <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+  <header class="bg-gradient-to-r from-blue-600 to-indigo-60">
   <!-- Navbar -->
   <nav class="max-w-7xl mx-auto flex items-center justify-between p-5">
     <div class="flex items-center gap-3">
@@ -30,15 +48,21 @@
       <span class="text-2xl font-bold tracking-wide">ShopWise</span>
     </div>
 
-    <ul class="hidden md:flex gap-8 text-sm font-medium">
+    <ul id="Menu">
       <li class="hover:text-gray-200 cursor-pointer">Home</li>
       <li class="hover:text-gray-200 cursor-pointer">Products</li>
       <li class="hover:text-gray-200 cursor-pointer">About</li>
       <li class="hover:text-gray-200 cursor-pointer">Contact</li>
     </ul>
-
-    <button class="bg-white text-blue-600 px-5 py-2 rounded-full font-semibold hover:bg-gray-100">
+    
+    <!--Login Button-->
+    <button id="Login" class="bg-white text-blue-600 px-5 py-2 rounded-full font-semibold hover:bg-gray-100">
       Login
+    </button>
+
+    <!--Register Button-->
+    <button id="Register">
+      Register
     </button>
   </nav>
 
